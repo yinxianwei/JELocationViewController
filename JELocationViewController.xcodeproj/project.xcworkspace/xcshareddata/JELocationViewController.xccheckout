@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5D79423A-F04A-4FA2-905E-BA3576135A49</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JELocationViewController</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>812528F7-E8B6-4363-A0C7-D251FCB36FD3</key>
+		<string>https://github.com/yinxianwei/JELocationViewController.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JELocationViewController.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>812528F7-E8B6-4363-A0C7-D251FCB36FD3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yinxianwei/JELocationViewController.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>812528F7-E8B6-4363-A0C7-D251FCB36FD3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>812528F7-E8B6-4363-A0C7-D251FCB36FD3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JELocationViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>

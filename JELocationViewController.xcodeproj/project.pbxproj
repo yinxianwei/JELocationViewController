@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C424019919AB386400C7D22C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424019819AB386400C7D22C /* Foundation.framework */; };
+		C424019B19AB386400C7D22C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424019A19AB386400C7D22C /* CoreGraphics.framework */; };
+		C424019D19AB386400C7D22C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424019C19AB386400C7D22C /* UIKit.framework */; };
+		C42401A319AB386400C7D22C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C42401A119AB386400C7D22C /* InfoPlist.strings */; };
+		C42401A519AB386400C7D22C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401A419AB386400C7D22C /* main.m */; };
+		C42401A919AB386400C7D22C /* JEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401A819AB386400C7D22C /* JEAppDelegate.m */; };
+		C42401AB19AB386400C7D22C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42401AA19AB386400C7D22C /* Images.xcassets */; };
+		C42401B219AB386400C7D22C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42401B119AB386400C7D22C /* XCTest.framework */; };
+		C42401B319AB386400C7D22C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424019819AB386400C7D22C /* Foundation.framework */; };
+		C42401B419AB386400C7D22C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424019C19AB386400C7D22C /* UIKit.framework */; };
+		C42401BC19AB386400C7D22C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C42401BA19AB386400C7D22C /* InfoPlist.strings */; };
+		C42401BE19AB386400C7D22C /* JELocationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401BD19AB386400C7D22C /* JELocationViewControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C42401B519AB386400C7D22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C424018D19AB386400C7D22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C424019419AB386400C7D22C;
+			remoteInfo = JELocationViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C424019519AB386400C7D22C /* JELocationViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JELocationViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C424019819AB386400C7D22C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C424019A19AB386400C7D22C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C424019C19AB386400C7D22C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C42401A019AB386400C7D22C /* JELocationViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JELocationViewController-Info.plist"; sourceTree = "<group>"; };
+		C42401A219AB386400C7D22C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C42401A419AB386400C7D22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C42401A619AB386400C7D22C /* JELocationViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JELocationViewController-Prefix.pch"; sourceTree = "<group>"; };
+		C42401A719AB386400C7D22C /* JEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JEAppDelegate.h; sourceTree = "<group>"; };
+		C42401A819AB386400C7D22C /* JEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JEAppDelegate.m; sourceTree = "<group>"; };
+		C42401AA19AB386400C7D22C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C42401B019AB386400C7D22C /* JELocationViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JELocationViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42401B119AB386400C7D22C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C42401B919AB386400C7D22C /* JELocationViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JELocationViewControllerTests-Info.plist"; sourceTree = "<group>"; };
+		C42401BB19AB386400C7D22C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C42401BD19AB386400C7D22C /* JELocationViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JELocationViewControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C424019219AB386400C7D22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C424019B19AB386400C7D22C /* CoreGraphics.framework in Frameworks */,
+				C424019D19AB386400C7D22C /* UIKit.framework in Frameworks */,
+				C424019919AB386400C7D22C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42401AD19AB386400C7D22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42401B219AB386400C7D22C /* XCTest.framework in Frameworks */,
+				C42401B419AB386400C7D22C /* UIKit.framework in Frameworks */,
+				C42401B319AB386400C7D22C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C424018C19AB386400C7D22C = {
+			isa = PBXGroup;
+			children = (
+				C424019E19AB386400C7D22C /* JELocationViewController */,
+				C42401B719AB386400C7D22C /* JELocationViewControllerTests */,
+				C424019719AB386400C7D22C /* Frameworks */,
+				C424019619AB386400C7D22C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C424019619AB386400C7D22C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C424019519AB386400C7D22C /* JELocationViewController.app */,
+				C42401B019AB386400C7D22C /* JELocationViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C424019719AB386400C7D22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C424019819AB386400C7D22C /* Foundation.framework */,
+				C424019A19AB386400C7D22C /* CoreGraphics.framework */,
+				C424019C19AB386400C7D22C /* UIKit.framework */,
+				C42401B119AB386400C7D22C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C424019E19AB386400C7D22C /* JELocationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C42401A719AB386400C7D22C /* JEAppDelegate.h */,
+				C42401A819AB386400C7D22C /* JEAppDelegate.m */,
+				C42401AA19AB386400C7D22C /* Images.xcassets */,
+				C424019F19AB386400C7D22C /* Supporting Files */,
+			);
+			path = JELocationViewController;
+			sourceTree = "<group>";
+		};
+		C424019F19AB386400C7D22C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C42401A019AB386400C7D22C /* JELocationViewController-Info.plist */,
+				C42401A119AB386400C7D22C /* InfoPlist.strings */,
+				C42401A419AB386400C7D22C /* main.m */,
+				C42401A619AB386400C7D22C /* JELocationViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C42401B719AB386400C7D22C /* JELocationViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C42401BD19AB386400C7D22C /* JELocationViewControllerTests.m */,
+				C42401B819AB386400C7D22C /* Supporting Files */,
+			);
+			path = JELocationViewControllerTests;
+			sourceTree = "<group>";
+		};
+		C42401B819AB386400C7D22C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C42401B919AB386400C7D22C /* JELocationViewControllerTests-Info.plist */,
+				C42401BA19AB386400C7D22C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C424019419AB386400C7D22C /* JELocationViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42401C119AB386400C7D22C /* Build configuration list for PBXNativeTarget "JELocationViewController" */;
+			buildPhases = (
+				C424019119AB386400C7D22C /* Sources */,
+				C424019219AB386400C7D22C /* Frameworks */,
+				C424019319AB386400C7D22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JELocationViewController;
+			productName = JELocationViewController;
+			productReference = C424019519AB386400C7D22C /* JELocationViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C42401AF19AB386400C7D22C /* JELocationViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42401C419AB386400C7D22C /* Build configuration list for PBXNativeTarget "JELocationViewControllerTests" */;
+			buildPhases = (
+				C42401AC19AB386400C7D22C /* Sources */,
+				C42401AD19AB386400C7D22C /* Frameworks */,
+				C42401AE19AB386400C7D22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C42401B619AB386400C7D22C /* PBXTargetDependency */,
+			);
+			name = JELocationViewControllerTests;
+			productName = JELocationViewControllerTests;
+			productReference = C42401B019AB386400C7D22C /* JELocationViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C424018D19AB386400C7D22C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "DNE Technology Co.,Ltd";
+				TargetAttributes = {
+					C42401AF19AB386400C7D22C = {
+						TestTargetID = C424019419AB386400C7D22C;
+					};
+				};
+			};
+			buildConfigurationList = C424019019AB386400C7D22C /* Build configuration list for PBXProject "JELocationViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C424018C19AB386400C7D22C;
+			productRefGroup = C424019619AB386400C7D22C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C424019419AB386400C7D22C /* JELocationViewController */,
+				C42401AF19AB386400C7D22C /* JELocationViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C424019319AB386400C7D22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42401A319AB386400C7D22C /* InfoPlist.strings in Resources */,
+				C42401AB19AB386400C7D22C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42401AE19AB386400C7D22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42401BC19AB386400C7D22C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C424019119AB386400C7D22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42401A519AB386400C7D22C /* main.m in Sources */,
+				C42401A919AB386400C7D22C /* JEAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42401AC19AB386400C7D22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42401BE19AB386400C7D22C /* JELocationViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C42401B619AB386400C7D22C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C424019419AB386400C7D22C /* JELocationViewController */;
+			targetProxy = C42401B519AB386400C7D22C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C42401A119AB386400C7D22C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C42401A219AB386400C7D22C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C42401BA19AB386400C7D22C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C42401BB19AB386400C7D22C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C42401BF19AB386400C7D22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C42401C019AB386400C7D22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C42401C219AB386400C7D22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JELocationViewController/JELocationViewController-Prefix.pch";
+				INFOPLIST_FILE = "JELocationViewController/JELocationViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C42401C319AB386400C7D22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JELocationViewController/JELocationViewController-Prefix.pch";
+				INFOPLIST_FILE = "JELocationViewController/JELocationViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C42401C519AB386400C7D22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JELocationViewController.app/JELocationViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JELocationViewController/JELocationViewController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JELocationViewControllerTests/JELocationViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C42401C619AB386400C7D22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JELocationViewController.app/JELocationViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JELocationViewController/JELocationViewController-Prefix.pch";
+				INFOPLIST_FILE = "JELocationViewControllerTests/JELocationViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C424019019AB386400C7D22C /* Build configuration list for PBXProject "JELocationViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42401BF19AB386400C7D22C /* Debug */,
+				C42401C019AB386400C7D22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42401C119AB386400C7D22C /* Build configuration list for PBXNativeTarget "JELocationViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42401C219AB386400C7D22C /* Debug */,
+				C42401C319AB386400C7D22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C42401C419AB386400C7D22C /* Build configuration list for PBXNativeTarget "JELocationViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42401C519AB386400C7D22C /* Debug */,
+				C42401C619AB386400C7D22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C424018D19AB386400C7D22C /* Project object */;
+}
