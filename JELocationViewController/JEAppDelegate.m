@@ -7,6 +7,8 @@
 //
 
 #import "JEAppDelegate.h"
+#import "JEViewController.h"
+
 
 @implementation JEAppDelegate
 
@@ -16,6 +18,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [self.window setRootViewController:[[JEViewController alloc]init]];
     return YES;
 }
 

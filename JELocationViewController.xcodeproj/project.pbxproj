@@ -19,6 +19,10 @@
 		C42401B419AB386400C7D22C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424019C19AB386400C7D22C /* UIKit.framework */; };
 		C42401BC19AB386400C7D22C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C42401BA19AB386400C7D22C /* InfoPlist.strings */; };
 		C42401BE19AB386400C7D22C /* JELocationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401BD19AB386400C7D22C /* JELocationViewControllerTests.m */; };
+		C42401D019AB38E800C7D22C /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401CA19AB38E800C7D22C /* DPAPI.m */; };
+		C42401D119AB38E800C7D22C /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401CD19AB38E800C7D22C /* DPRequest.m */; };
+		C42401D219AB38E800C7D22C /* JELocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401CF19AB38E800C7D22C /* JELocationViewController.m */; };
+		C42401D719AB39BB00C7D22C /* JEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401D619AB39BB00C7D22C /* JEViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,15 @@
 		C42401B919AB386400C7D22C /* JELocationViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JELocationViewControllerTests-Info.plist"; sourceTree = "<group>"; };
 		C42401BB19AB386400C7D22C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C42401BD19AB386400C7D22C /* JELocationViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JELocationViewControllerTests.m; sourceTree = "<group>"; };
+		C42401C919AB38E800C7D22C /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
+		C42401CA19AB38E800C7D22C /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
+		C42401CB19AB38E800C7D22C /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
+		C42401CC19AB38E800C7D22C /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		C42401CD19AB38E800C7D22C /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
+		C42401CE19AB38E800C7D22C /* JELocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JELocationViewController.h; sourceTree = "<group>"; };
+		C42401CF19AB38E800C7D22C /* JELocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JELocationViewController.m; sourceTree = "<group>"; };
+		C42401D519AB39BB00C7D22C /* JEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEViewController.h; sourceTree = "<group>"; };
+		C42401D619AB39BB00C7D22C /* JEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +122,9 @@
 			children = (
 				C42401A719AB386400C7D22C /* JEAppDelegate.h */,
 				C42401A819AB386400C7D22C /* JEAppDelegate.m */,
-				C42401AA19AB386400C7D22C /* Images.xcassets */,
+				C42401D519AB39BB00C7D22C /* JEViewController.h */,
+				C42401D619AB39BB00C7D22C /* JEViewController.m */,
+				C42401C719AB38E800C7D22C /* JELocationViewController */,
 				C424019F19AB386400C7D22C /* Supporting Files */,
 			);
 			path = JELocationViewController;
@@ -118,6 +133,7 @@
 		C424019F19AB386400C7D22C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C42401AA19AB386400C7D22C /* Images.xcassets */,
 				C42401A019AB386400C7D22C /* JELocationViewController-Info.plist */,
 				C42401A119AB386400C7D22C /* InfoPlist.strings */,
 				C42401A419AB386400C7D22C /* main.m */,
@@ -142,6 +158,28 @@
 				C42401BA19AB386400C7D22C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C42401C719AB38E800C7D22C /* JELocationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C42401C819AB38E800C7D22C /* dianpingapi */,
+				C42401CE19AB38E800C7D22C /* JELocationViewController.h */,
+				C42401CF19AB38E800C7D22C /* JELocationViewController.m */,
+			);
+			path = JELocationViewController;
+			sourceTree = "<group>";
+		};
+		C42401C819AB38E800C7D22C /* dianpingapi */ = {
+			isa = PBXGroup;
+			children = (
+				C42401C919AB38E800C7D22C /* DPAPI.h */,
+				C42401CA19AB38E800C7D22C /* DPAPI.m */,
+				C42401CB19AB38E800C7D22C /* DPConstants.h */,
+				C42401CC19AB38E800C7D22C /* DPRequest.h */,
+				C42401CD19AB38E800C7D22C /* DPRequest.m */,
+			);
+			path = dianpingapi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42401D019AB38E800C7D22C /* DPAPI.m in Sources */,
+				C42401D719AB39BB00C7D22C /* JEViewController.m in Sources */,
 				C42401A519AB386400C7D22C /* main.m in Sources */,
 				C42401A919AB386400C7D22C /* JEAppDelegate.m in Sources */,
+				C42401D119AB38E800C7D22C /* DPRequest.m in Sources */,
+				C42401D219AB38E800C7D22C /* JELocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +400,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ANN YAO (2Z5QUFZK8T)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JELocationViewController/JELocationViewController-Prefix.pch";
 				INFOPLIST_FILE = "JELocationViewController/JELocationViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "163b7e27-95b4-4428-9ee7-078f59103f9b";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,10 +420,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ANN YAO (2Z5QUFZK8T)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JELocationViewController/JELocationViewController-Prefix.pch";
 				INFOPLIST_FILE = "JELocationViewController/JELocationViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "163b7e27-95b4-4428-9ee7-078f59103f9b";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -438,6 +494,7 @@
 				C42401C319AB386400C7D22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C42401C419AB386400C7D22C /* Build configuration list for PBXNativeTarget "JELocationViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +503,7 @@
 				C42401C619AB386400C7D22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
