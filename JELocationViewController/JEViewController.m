@@ -40,7 +40,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test2:) name:JELocationViewControllerNotification object:nil];
     
     [[JEGetLocation sharedGetlocation]getLocation:^(BOOL isOk, JEAnnotation *userLocation, NSArray *nearbyLocations) {
-        NSLog(@"--------");
         if (isOk) {
             self.annotation = userLocation;
             [self.button setTitle:userLocation.title forState:UIControlStateNormal];

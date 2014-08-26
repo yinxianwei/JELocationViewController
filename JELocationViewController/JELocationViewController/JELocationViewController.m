@@ -52,8 +52,6 @@
 
     self.dataArray = [NSMutableArray array];
     
-    [_mapView setCenterCoordinate:[[[CLLocation alloc]initWithLatitude:self.coordinate.latitude longitude:self.coordinate.longitude] locationMarsFromEarth] zoomLevel:19 animated:YES];
-
     [self getSurroundingInfo:self.coordinate page:1];
     
     self.tableView.autoresizingMask = _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -106,11 +104,9 @@
 
 - (void)request:(DPRequest *)request didReceiveRawData:(NSData *)data;
 {
-    if (self.dataArray.count > 0) {
-        [self.mapView removeOverlays:self.dataArray];
-        [self.dataArray removeAllObjects];
-    }
-    
+    [self.mapView removeOverlays:self.dataArray];
+    self.dataArray = [NSMutableArray array];
+
     NSDictionary *dict = [self json:data];
     NSArray *ary = [dict objectForKey:@"businesses"];
     for (NSDictionary *dict2 in ary) {
@@ -118,10 +114,20 @@
         ann.title = [[dict2 objectForKey:@"name"] removeString:@"(这是一条测试商户数据，仅用于测试开发，开发完成后请申请正式数据...)"];
         ann.subtitle = [dict2 objectForKey:@"address"];
         ann.coordinate = CLLocationCoordinate2DMake([[dict2 objectForKey:@"latitude"] doubleValue], [[dict2 objectForKey:@"longitude"] doubleValue]);
+        ann.animatesDrop = NO;
         [self.dataArray addObject:ann];
     }
     [self.tableView reloadData];
-    [self.mapView addAnnotations:self.dataArray];
+    
+    VPPMapHelper *mapHelper = [VPPMapHelper VPPMapHelperForMapView:self.mapView
+                                                pinAnnotationColor:MKPinAnnotationColorRed
+                                             centersOnUserLocation:NO
+                                             showsDisclosureButton:NO
+                                                          delegate:nil];
+	mapHelper.userCanDropPin = YES;
+	mapHelper.allowMultipleUserPins = YES;
+	mapHelper.pinDroppedByUserClass = [JEAnnotation class];
+	[mapHelper setMapAnnotations:self.dataArray];
 }
 
 - (void)request:(DPRequest *)request didFailWithError:(NSError *)error {
@@ -162,8 +168,6 @@
     CGFloat h2 = (([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0 ? YES : NO) ? 20.f : 0.f);
     return (h + h2);
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -302,37 +306,48 @@ static JEGetLocation *_manager = NULL;
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation{
-    CLLocationCoordinate2D ll2d = [newLocation locationMarsFromEarth];
     
-    CLLocation *location = [[CLLocation alloc]initWithLatitude:ll2d.latitude longitude:ll2d.longitude];
-    
-    CLGeocoder* geocoder = [[CLGeocoder alloc] init];
-    
-    [geocoder reverseGeocodeLocation:location completionHandler:
-     ^(NSArray* placemarks, NSError* error){
-         if (error) {
-             if (self.success) {
-                 self.success(NO,nil,nil);
-             }
-         }
-         else{
-             NSString *title = @"";
-             NSString *subtitle = @"";
-             for (CLPlacemark *placemark in placemarks) {
-                 title = placemark.thoroughfare.length != 0 ? [NSString stringWithFormat:@"%@,%@,%@",placemark.administrativeArea,placemark.subLocality,placemark.thoroughfare] : [[placemark.name removeString:placemark.country] removeString:placemark.administrativeArea];
-                 NSArray *ary = [placemark.addressDictionary objectForKeyedSubscript:@"FormattedAddressLines"];
-                 if (ary.count>0) {
-                     subtitle = ary[0];
+    NSDate* eventDate = newLocation.timestamp;
+    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    if (abs(howRecent) < 5.0){
+        
+        [self.locationManager stopUpdatingLocation];
+
+        printf("latitude %+.6f, longitude %+.6f\n",
+               newLocation.coordinate.latitude,
+               newLocation.coordinate.longitude);
+        
+        CLLocationCoordinate2D ll2d = [newLocation locationMarsFromEarth];
+        
+        CLLocation *location = [[CLLocation alloc]initWithLatitude:ll2d.latitude longitude:ll2d.longitude];
+        
+        CLGeocoder* geocoder = [[CLGeocoder alloc] init];
+        
+        [geocoder reverseGeocodeLocation:location completionHandler:
+         ^(NSArray* placemarks, NSError* error){
+             if (error) {
+                 if (self.success) {
+                     self.success(NO,nil,nil);
                  }
              }
-             JEAnnotation *ann = [[JEAnnotation alloc]init];
-             ann.coordinate = newLocation.coordinate;
-             ann.title = title;
-             ann.subtitle = subtitle;
-             self.success(YES, ann,nil);
-         }
-     }];
-     [self.locationManager stopUpdatingLocation];
+             else{
+                 NSString *title = @"";
+                 NSString *subtitle = @"";
+                 for (CLPlacemark *placemark in placemarks) {
+                     title = placemark.thoroughfare.length != 0 ? [NSString stringWithFormat:@"%@,%@,%@",placemark.administrativeArea,placemark.subLocality,placemark.thoroughfare] : [[placemark.name removeString:placemark.country] removeString:placemark.administrativeArea];
+                     NSArray *ary = [placemark.addressDictionary objectForKeyedSubscript:@"FormattedAddressLines"];
+                     if (ary.count>0) {
+                         subtitle = ary[0];
+                     }
+                 }
+                 JEAnnotation *ann = [[JEAnnotation alloc]init];
+                 ann.coordinate = newLocation.coordinate;
+                 ann.title = title;
+                 ann.subtitle = subtitle;
+                 self.success(YES, ann, nil);
+             }
+         }];
+    }
 }
 
 
@@ -346,6 +361,12 @@ static JEGetLocation *_manager = NULL;
 
 @implementation JEAnnotation
 
+@synthesize coordinate;
+@synthesize title;
+@synthesize subtitle;
+@synthesize pinAnnotationColor;
+@synthesize opensWhenShown;
+@synthesize image;
 @end
 
 

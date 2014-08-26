@@ -23,6 +23,11 @@
 		C42401D119AB38E800C7D22C /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401CD19AB38E800C7D22C /* DPRequest.m */; };
 		C42401D219AB38E800C7D22C /* JELocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401CF19AB38E800C7D22C /* JELocationViewController.m */; };
 		C42401D719AB39BB00C7D22C /* JEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401D619AB39BB00C7D22C /* JEViewController.m */; };
+		C424025419AC734600C7D22C /* VPPMapCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = C424024919AC734600C7D22C /* VPPMapCluster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C424025519AC734600C7D22C /* VPPMapClusterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C424024B19AC734600C7D22C /* VPPMapClusterHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C424025619AC734600C7D22C /* VPPMapClusterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C424024D19AC734600C7D22C /* VPPMapClusterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C424025719AC734600C7D22C /* VPPMapAnnotationExample.m in Sources */ = {isa = PBXBuildFile; fileRef = C424024F19AC734600C7D22C /* VPPMapAnnotationExample.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C424025819AC734600C7D22C /* VPPMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C424025219AC734600C7D22C /* VPPMapHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,18 @@
 		C42401CF19AB38E800C7D22C /* JELocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JELocationViewController.m; sourceTree = "<group>"; };
 		C42401D519AB39BB00C7D22C /* JEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEViewController.h; sourceTree = "<group>"; };
 		C42401D619AB39BB00C7D22C /* JEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEViewController.m; sourceTree = "<group>"; };
+		C424024819AC734600C7D22C /* VPPMapCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapCluster.h; sourceTree = "<group>"; };
+		C424024919AC734600C7D22C /* VPPMapCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapCluster.m; sourceTree = "<group>"; };
+		C424024A19AC734600C7D22C /* VPPMapClusterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapClusterHelper.h; sourceTree = "<group>"; };
+		C424024B19AC734600C7D22C /* VPPMapClusterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapClusterHelper.m; sourceTree = "<group>"; };
+		C424024C19AC734600C7D22C /* VPPMapClusterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapClusterView.h; sourceTree = "<group>"; };
+		C424024D19AC734600C7D22C /* VPPMapClusterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapClusterView.m; sourceTree = "<group>"; };
+		C424024E19AC734600C7D22C /* VPPMapAnnotationExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapAnnotationExample.h; sourceTree = "<group>"; };
+		C424024F19AC734600C7D22C /* VPPMapAnnotationExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapAnnotationExample.m; sourceTree = "<group>"; };
+		C424025019AC734600C7D22C /* VPPMapCustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapCustomAnnotation.h; sourceTree = "<group>"; };
+		C424025119AC734600C7D22C /* VPPMapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapHelper.h; sourceTree = "<group>"; };
+		C424025219AC734600C7D22C /* VPPMapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapHelper.m; sourceTree = "<group>"; };
+		C424025319AC734600C7D22C /* VPPMapHelperDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapHelperDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +180,7 @@
 		C42401C719AB38E800C7D22C /* JELocationViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C424024619AC734600C7D22C /* VPPMap */,
 				C42401C819AB38E800C7D22C /* dianpingapi */,
 				C42401CE19AB38E800C7D22C /* JELocationViewController.h */,
 				C42401CF19AB38E800C7D22C /* JELocationViewController.m */,
@@ -180,6 +198,33 @@
 				C42401CD19AB38E800C7D22C /* DPRequest.m */,
 			);
 			path = dianpingapi;
+			sourceTree = "<group>";
+		};
+		C424024619AC734600C7D22C /* VPPMap */ = {
+			isa = PBXGroup;
+			children = (
+				C424024719AC734600C7D22C /* Clustering */,
+				C424024E19AC734600C7D22C /* VPPMapAnnotationExample.h */,
+				C424024F19AC734600C7D22C /* VPPMapAnnotationExample.m */,
+				C424025019AC734600C7D22C /* VPPMapCustomAnnotation.h */,
+				C424025119AC734600C7D22C /* VPPMapHelper.h */,
+				C424025219AC734600C7D22C /* VPPMapHelper.m */,
+				C424025319AC734600C7D22C /* VPPMapHelperDelegate.h */,
+			);
+			path = VPPMap;
+			sourceTree = "<group>";
+		};
+		C424024719AC734600C7D22C /* Clustering */ = {
+			isa = PBXGroup;
+			children = (
+				C424024819AC734600C7D22C /* VPPMapCluster.h */,
+				C424024919AC734600C7D22C /* VPPMapCluster.m */,
+				C424024A19AC734600C7D22C /* VPPMapClusterHelper.h */,
+				C424024B19AC734600C7D22C /* VPPMapClusterHelper.m */,
+				C424024C19AC734600C7D22C /* VPPMapClusterView.h */,
+				C424024D19AC734600C7D22C /* VPPMapClusterView.m */,
+			);
+			path = Clustering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,12 +323,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C424025619AC734600C7D22C /* VPPMapClusterView.m in Sources */,
 				C42401D019AB38E800C7D22C /* DPAPI.m in Sources */,
 				C42401D719AB39BB00C7D22C /* JEViewController.m in Sources */,
 				C42401A519AB386400C7D22C /* main.m in Sources */,
+				C424025819AC734600C7D22C /* VPPMapHelper.m in Sources */,
 				C42401A919AB386400C7D22C /* JEAppDelegate.m in Sources */,
 				C42401D119AB38E800C7D22C /* DPRequest.m in Sources */,
 				C42401D219AB38E800C7D22C /* JELocationViewController.m in Sources */,
+				C424025719AC734600C7D22C /* VPPMapAnnotationExample.m in Sources */,
+				C424025519AC734600C7D22C /* VPPMapClusterHelper.m in Sources */,
+				C424025419AC734600C7D22C /* VPPMapCluster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

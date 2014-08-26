@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "DPAPI.h"
+#import "VPPMapHelper.h"
+#import "VPPMapCustomAnnotation.h"
 
 @class JEAnnotation;
 
@@ -70,14 +72,19 @@
 @end
 
 /*!
- *  数据模型
+ *  标注数据模型
  */
-@interface JEAnnotation : NSObject <MKAnnotation>
+@interface JEAnnotation : NSObject <VPPMapCustomAnnotation>
+
+@property (nonatomic, assign) MKPinAnnotationColor pinAnnotationColor;
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+
 @property (nonatomic, copy) NSString *title;
+
 @property (nonatomic, copy) NSString *subtitle;
 
+@property (nonatomic, assign) BOOL animatesDrop;
 @end
 
 
