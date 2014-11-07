@@ -39,7 +39,7 @@
         _label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 26, 26)];
         [self addSubview:_label];
         if ([annotation isKindOfClass:[VPPMapCluster class]]) {
-            self.title = [NSString stringWithFormat:@"%d",[[(VPPMapCluster*)annotation annotations] count]];
+            self.title = [NSString stringWithFormat:@"%lu",(unsigned long)[[(VPPMapCluster*)annotation annotations] count]];
         }
         _label.textColor = [UIColor whiteColor];
         _label.backgroundColor = [UIColor grayColor];

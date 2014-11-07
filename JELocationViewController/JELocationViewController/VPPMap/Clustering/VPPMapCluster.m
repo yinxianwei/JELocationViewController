@@ -28,7 +28,7 @@
 
 #import "VPPMapCluster.h"
 
-#define kAnnotationsNumber @"%d annotations"
+#define kAnnotationsNumber @"%ld annotations"
 
 @implementation VPPMapCluster
 @synthesize pinAnnotationColor;
@@ -50,7 +50,7 @@
 }
 
 - (NSString *) title {
-    return [NSString stringWithFormat:kAnnotationsNumber,[self.annotations count]];
+    return [NSString stringWithFormat:kAnnotationsNumber,(long)[self.annotations count]];
 }
 
 - (CLLocationCoordinate2D) coordinate {

@@ -38,10 +38,10 @@
     if (!_mapView) {
         _mapView = [[MKMapView alloc]initWithFrame:CGRectMake(0, [self height], JE_SCREEN_WIDTH, 150)];
     }
-    self.mapView.showsUserLocation = YES;
-    _mapView.delegate = self;
+//    self.mapView.showsUserLocation = YES;
+//    _mapView.delegate = self;
     [self.view addSubview:_mapView];
-    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+//    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
     
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, _mapView.frame.size.height+_mapView.frame.origin.y, JE_SCREEN_WIDTH, JE_SCREEN_HEIGHT - (_mapView.frame.size.height+_mapView.frame.origin.y)) style:UITableViewStylePlain];
     self.tableView.dataSource = self;
