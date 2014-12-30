@@ -19,8 +19,6 @@
 		C42401B419AB386400C7D22C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424019C19AB386400C7D22C /* UIKit.framework */; };
 		C42401BC19AB386400C7D22C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C42401BA19AB386400C7D22C /* InfoPlist.strings */; };
 		C42401BE19AB386400C7D22C /* JELocationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401BD19AB386400C7D22C /* JELocationViewControllerTests.m */; };
-		C42401D019AB38E800C7D22C /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401CA19AB38E800C7D22C /* DPAPI.m */; };
-		C42401D119AB38E800C7D22C /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401CD19AB38E800C7D22C /* DPRequest.m */; };
 		C42401D219AB38E800C7D22C /* JELocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401CF19AB38E800C7D22C /* JELocationViewController.m */; };
 		C42401D719AB39BB00C7D22C /* JEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42401D619AB39BB00C7D22C /* JEViewController.m */; };
 		C424025419AC734600C7D22C /* VPPMapCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = C424024919AC734600C7D22C /* VPPMapCluster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -28,6 +26,11 @@
 		C424025619AC734600C7D22C /* VPPMapClusterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C424024D19AC734600C7D22C /* VPPMapClusterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C424025719AC734600C7D22C /* VPPMapAnnotationExample.m in Sources */ = {isa = PBXBuildFile; fileRef = C424024F19AC734600C7D22C /* VPPMapAnnotationExample.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C424025819AC734600C7D22C /* VPPMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C424025219AC734600C7D22C /* VPPMapHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D07906291A4C015E00D71E3B /* JEViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D07906281A4C015E00D71E3B /* JEViewController2.m */; };
+		D07906371A4C019A00D71E3B /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D079062F1A4C019A00D71E3B /* DPAPI.m */; };
+		D07906381A4C019A00D71E3B /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D07906321A4C019A00D71E3B /* DPRequest.m */; };
+		D07906391A4C019A00D71E3B /* JEAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D07906341A4C019A00D71E3B /* JEAnnotation.m */; };
+		D079063A1A4C019A00D71E3B /* JEGetLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D07906361A4C019A00D71E3B /* JEGetLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +60,6 @@
 		C42401B919AB386400C7D22C /* JELocationViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JELocationViewControllerTests-Info.plist"; sourceTree = "<group>"; };
 		C42401BB19AB386400C7D22C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C42401BD19AB386400C7D22C /* JELocationViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JELocationViewControllerTests.m; sourceTree = "<group>"; };
-		C42401C919AB38E800C7D22C /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
-		C42401CA19AB38E800C7D22C /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
-		C42401CB19AB38E800C7D22C /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
-		C42401CC19AB38E800C7D22C /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
-		C42401CD19AB38E800C7D22C /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
 		C42401CE19AB38E800C7D22C /* JELocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JELocationViewController.h; sourceTree = "<group>"; };
 		C42401CF19AB38E800C7D22C /* JELocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JELocationViewController.m; sourceTree = "<group>"; };
 		C42401D519AB39BB00C7D22C /* JEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEViewController.h; sourceTree = "<group>"; };
@@ -78,6 +76,17 @@
 		C424025119AC734600C7D22C /* VPPMapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapHelper.h; sourceTree = "<group>"; };
 		C424025219AC734600C7D22C /* VPPMapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapHelper.m; sourceTree = "<group>"; };
 		C424025319AC734600C7D22C /* VPPMapHelperDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapHelperDelegate.h; sourceTree = "<group>"; };
+		D07906271A4C015E00D71E3B /* JEViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEViewController2.h; sourceTree = "<group>"; };
+		D07906281A4C015E00D71E3B /* JEViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEViewController2.m; sourceTree = "<group>"; };
+		D079062E1A4C019A00D71E3B /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
+		D079062F1A4C019A00D71E3B /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
+		D07906301A4C019A00D71E3B /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
+		D07906311A4C019A00D71E3B /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		D07906321A4C019A00D71E3B /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
+		D07906331A4C019A00D71E3B /* JEAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEAnnotation.h; sourceTree = "<group>"; };
+		D07906341A4C019A00D71E3B /* JEAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEAnnotation.m; sourceTree = "<group>"; };
+		D07906351A4C019A00D71E3B /* JEGetLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEGetLocation.h; sourceTree = "<group>"; };
+		D07906361A4C019A00D71E3B /* JEGetLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEGetLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +150,8 @@
 				C42401A819AB386400C7D22C /* JEAppDelegate.m */,
 				C42401D519AB39BB00C7D22C /* JEViewController.h */,
 				C42401D619AB39BB00C7D22C /* JEViewController.m */,
+				D07906271A4C015E00D71E3B /* JEViewController2.h */,
+				D07906281A4C015E00D71E3B /* JEViewController2.m */,
 				C42401C719AB38E800C7D22C /* JELocationViewController */,
 				C424019F19AB386400C7D22C /* Supporting Files */,
 			);
@@ -180,24 +191,12 @@
 		C42401C719AB38E800C7D22C /* JELocationViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D079062C1A4C019A00D71E3B /* JEGetLocation */,
 				C424024619AC734600C7D22C /* VPPMap */,
-				C42401C819AB38E800C7D22C /* dianpingapi */,
 				C42401CE19AB38E800C7D22C /* JELocationViewController.h */,
 				C42401CF19AB38E800C7D22C /* JELocationViewController.m */,
 			);
 			path = JELocationViewController;
-			sourceTree = "<group>";
-		};
-		C42401C819AB38E800C7D22C /* dianpingapi */ = {
-			isa = PBXGroup;
-			children = (
-				C42401C919AB38E800C7D22C /* DPAPI.h */,
-				C42401CA19AB38E800C7D22C /* DPAPI.m */,
-				C42401CB19AB38E800C7D22C /* DPConstants.h */,
-				C42401CC19AB38E800C7D22C /* DPRequest.h */,
-				C42401CD19AB38E800C7D22C /* DPRequest.m */,
-			);
-			path = dianpingapi;
 			sourceTree = "<group>";
 		};
 		C424024619AC734600C7D22C /* VPPMap */ = {
@@ -225,6 +224,30 @@
 				C424024D19AC734600C7D22C /* VPPMapClusterView.m */,
 			);
 			path = Clustering;
+			sourceTree = "<group>";
+		};
+		D079062C1A4C019A00D71E3B /* JEGetLocation */ = {
+			isa = PBXGroup;
+			children = (
+				D079062D1A4C019A00D71E3B /* dianpingapi */,
+				D07906331A4C019A00D71E3B /* JEAnnotation.h */,
+				D07906341A4C019A00D71E3B /* JEAnnotation.m */,
+				D07906351A4C019A00D71E3B /* JEGetLocation.h */,
+				D07906361A4C019A00D71E3B /* JEGetLocation.m */,
+			);
+			path = JEGetLocation;
+			sourceTree = "<group>";
+		};
+		D079062D1A4C019A00D71E3B /* dianpingapi */ = {
+			isa = PBXGroup;
+			children = (
+				D079062E1A4C019A00D71E3B /* DPAPI.h */,
+				D079062F1A4C019A00D71E3B /* DPAPI.m */,
+				D07906301A4C019A00D71E3B /* DPConstants.h */,
+				D07906311A4C019A00D71E3B /* DPRequest.h */,
+				D07906321A4C019A00D71E3B /* DPRequest.m */,
+			);
+			path = dianpingapi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,15 +347,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C424025619AC734600C7D22C /* VPPMapClusterView.m in Sources */,
-				C42401D019AB38E800C7D22C /* DPAPI.m in Sources */,
 				C42401D719AB39BB00C7D22C /* JEViewController.m in Sources */,
+				D07906371A4C019A00D71E3B /* DPAPI.m in Sources */,
 				C42401A519AB386400C7D22C /* main.m in Sources */,
 				C424025819AC734600C7D22C /* VPPMapHelper.m in Sources */,
 				C42401A919AB386400C7D22C /* JEAppDelegate.m in Sources */,
-				C42401D119AB38E800C7D22C /* DPRequest.m in Sources */,
+				D07906291A4C015E00D71E3B /* JEViewController2.m in Sources */,
+				D07906381A4C019A00D71E3B /* DPRequest.m in Sources */,
+				D079063A1A4C019A00D71E3B /* JEGetLocation.m in Sources */,
 				C42401D219AB38E800C7D22C /* JELocationViewController.m in Sources */,
 				C424025719AC734600C7D22C /* VPPMapAnnotationExample.m in Sources */,
 				C424025519AC734600C7D22C /* VPPMapClusterHelper.m in Sources */,
+				D07906391A4C019A00D71E3B /* JEAnnotation.m in Sources */,
 				C424025419AC734600C7D22C /* VPPMapCluster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ANN YAO (2Z5QUFZK8T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xin sumin (XJ2KW65727)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -460,7 +486,7 @@
 				INFOPLIST_FILE = "JELocationViewController/JELocationViewController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "163b7e27-95b4-4428-9ee7-078f59103f9b";
+				PROVISIONING_PROFILE = "bdc010c3-2cf9-45cf-8db0-7929b20d1f15";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -470,7 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ANN YAO (2Z5QUFZK8T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xin sumin (XJ2KW65727)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -480,7 +506,7 @@
 				INFOPLIST_FILE = "JELocationViewController/JELocationViewController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "163b7e27-95b4-4428-9ee7-078f59103f9b";
+				PROVISIONING_PROFILE = "bdc010c3-2cf9-45cf-8db0-7929b20d1f15";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

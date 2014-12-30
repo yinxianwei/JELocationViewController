@@ -10,29 +10,29 @@
 	<string>JELocationViewController</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>812528F7-E8B6-4363-A0C7-D251FCB36FD3</key>
+		<key>3178EAD75581E95201348803404D852BFC23B30B</key>
 		<string>https://github.com/yinxianwei/JELocationViewController.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>JELocationViewController.xcodeproj/project.xcworkspace</string>
+	<string>JELocationViewController.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>812528F7-E8B6-4363-A0C7-D251FCB36FD3</key>
+		<key>3178EAD75581E95201348803404D852BFC23B30B</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/yinxianwei/JELocationViewController.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>812528F7-E8B6-4363-A0C7-D251FCB36FD3</string>
+	<string>3178EAD75581E95201348803404D852BFC23B30B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>812528F7-E8B6-4363-A0C7-D251FCB36FD3</string>
+			<string>3178EAD75581E95201348803404D852BFC23B30B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>JELocationViewController</string>
 		</dict>

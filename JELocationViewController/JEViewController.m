@@ -13,7 +13,8 @@
 
 @property (strong, nonatomic) UIButton *button;
 
-@property (strong, nonatomic) JEAnnotation *annotation;
+@property (strong, nonatomic) JEAnnotations *annotation;
+
 
 @end
 
@@ -37,43 +38,60 @@
     self.button.backgroundColor = [UIColor lightGrayColor];
     [self.button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test2:) name:JELocationViewControllerNotification object:nil];
     
-    [[JEGetLocation sharedGetlocation]getLocation:^(BOOL isOk, JEAnnotation *userLocation, NSArray *nearbyLocations) {
-        if (isOk) {
-            self.annotation = userLocation;
-            [self.button setTitle:userLocation.title forState:UIControlStateNormal];
-        }
-        else{
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"没有获取到当前位置信息" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles: nil];
-            [alert show];
-        }
-    }];
+
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test2:) name:JELocationViewControllerNotification object:nil];
+//    
+//    [[JEGetLocation sharedGetlocation]getLocation:^(BOOL isOk, JEAnnotation *userLocation, NSArray *nearbyLocations) {
+//        if (isOk) {
+//            self.annotation = userLocation;
+//            [self.button setTitle:userLocation.title forState:UIControlStateNormal];
+//        }
+//        else{
+//            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"没有获取到当前位置信息" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles: nil];
+//            [alert show];
+//        }
+//    }];
 }
 
-- (void)test{
-    [[JEGetLocation sharedGetlocation]getLocation:^(BOOL isOk, JEAnnotation *userLocation, NSArray *nearbyLocations) {
-        if (isOk) {
-            self.annotation = userLocation;
-            JELocationViewController *jevc = [[JELocationViewController alloc]initWithAnnotation:userLocation];
-            [self presentViewController:jevc animated:YES completion:nil];
-        }
-        else{
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"没有获取到当前位置信息" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles: nil];
-            [alert show];
-        }
-    }];
-    
-}
 
-- (void)test2:(NSNotification *)notification{
-    if ([notification.name isEqualToString:JELocationViewControllerNotification]) {
-        self.annotation = (JEAnnotation *)notification.object;
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:[NSString stringWithFormat:@"title:%@\nsubtitle:%@\nlocation:%.6f,%.6f",self.annotation.title,self.annotation.subtitle,self.annotation.coordinate.latitude,self.annotation.coordinate.longitude] delegate:nil cancelButtonTitle:@"取消" otherButtonTitles: nil];
-        [alert show];
-        [self.button setTitle:self.annotation.title forState:UIControlStateNormal];
-    }
-}
+
+
+//- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+//    switch (status) {
+//        case kCLAuthorizationStatusNotDetermined:
+//            if ([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+//                [locationManager requestWhenInUseAuthorization];
+//            }
+//            break;
+//        default:
+//            break;
+//    }
+//}
+//
+//- (void)test{
+//    [[JEGetLocation sharedGetlocation]getLocation:^(BOOL isOk, JEAnnotation *userLocation, NSArray *nearbyLocations) {
+//        if (isOk) {
+//            self.annotation = userLocation;
+//            JELocationViewController *jevc = [[JELocationViewController alloc]initWithAnnotation:userLocation];
+//            [self presentViewController:jevc animated:YES completion:nil];
+//        }
+//        else{
+//            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"没有获取到当前位置信息" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles: nil];
+//            [alert show];
+//        }
+//    }];
+//    
+//}
+//
+//- (void)test2:(NSNotification *)notification{
+//    if ([notification.name isEqualToString:JELocationViewControllerNotification]) {
+//        self.annotation = (JEAnnotation *)notification.object;
+//        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:[NSString stringWithFormat:@"title:%@\nsubtitle:%@\nlocation:%.6f,%.6f",self.annotation.title,self.annotation.subtitle,self.annotation.coordinate.latitude,self.annotation.coordinate.longitude] delegate:nil cancelButtonTitle:@"取消" otherButtonTitles: nil];
+//        [alert show];
+//        [self.button setTitle:self.annotation.title forState:UIControlStateNormal];
+//    }
+//}
 
 - (void)didReceiveMemoryWarning
 {
